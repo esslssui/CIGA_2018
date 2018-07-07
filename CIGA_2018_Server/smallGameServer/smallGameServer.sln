@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "smallGameServer", "smallGameServer\smallGameServer.njsproj", "{C9FF8E75-A002-4898-9FDD-D6CC02DCFADE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9FF8E75-A002-4898-9FDD-D6CC02DCFADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9FF8E75-A002-4898-9FDD-D6CC02DCFADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9FF8E75-A002-4898-9FDD-D6CC02DCFADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9FF8E75-A002-4898-9FDD-D6CC02DCFADE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E959CC10-C9F1-4E5B-8D61-80F74337786B}
+	EndGlobalSection
+EndGlobal

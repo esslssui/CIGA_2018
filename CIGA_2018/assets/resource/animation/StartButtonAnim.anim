@@ -1,0 +1,207 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "StartButtonAnim",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.4,
+  "sample": 60,
+  "speed": 2,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "All": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 255
+              }
+            }
+          ]
+        }
+      },
+      "All/1": {
+        "props": {
+          "rotation": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.4,
+              "value": -29
+            }
+          ]
+        }
+      },
+      "All/4": {
+        "props": {
+          "rotation": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.4,
+              "value": -29
+            }
+          ]
+        }
+      },
+      "All/2": {
+        "props": {
+          "rotation": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.4,
+              "value": 29
+            }
+          ]
+        }
+      },
+      "All/5": {
+        "props": {
+          "rotation": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.4,
+              "value": 29
+            }
+          ]
+        }
+      },
+      "All/3": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.4,
+              "value": 0
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -58.1,
+                0.6
+              ]
+            },
+            {
+              "frame": 0.4,
+              "value": [
+                -76.42,
+                -34.62
+              ]
+            }
+          ]
+        }
+      },
+      "All/6": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.4,
+              "value": 0
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -43.8,
+                -5.7
+              ]
+            },
+            {
+              "frame": 0.4,
+              "value": [
+                -60.04,
+                -33.64
+              ]
+            }
+          ]
+        }
+      },
+      "All/3`1": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.4,
+              "value": 0
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -57.4,
+                -68.3
+              ]
+            },
+            {
+              "frame": 0.4,
+              "value": [
+                -73.9,
+                -32.81
+              ]
+            }
+          ]
+        }
+      },
+      "All/6`1": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.4,
+              "value": 0
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -46.5,
+                -58.9
+              ]
+            },
+            {
+              "frame": 0.4,
+              "value": [
+                -62.7,
+                -33.52
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}
