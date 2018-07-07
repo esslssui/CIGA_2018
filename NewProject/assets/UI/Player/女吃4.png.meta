@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "92f94471-49da-42b9-8a36-8776a614cfed",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "女吃4": {
+      "ver": "1.0.3",
+      "uuid": "0cafdc8c-3724-4a02-b425-235da8ba23f2",
+      "rawTextureUuid": "92f94471-49da-42b9-8a36-8776a614cfed",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1.5,
+      "offsetY": -38,
+      "trimX": 2,
+      "trimY": 76,
+      "width": 1202,
+      "height": 643,
+      "rawWidth": 1209,
+      "rawHeight": 719,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

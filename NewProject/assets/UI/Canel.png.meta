@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "f36fefb7-7ab0-488b-b396-6459895b001b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "Canel": {
+      "ver": "1.0.3",
+      "uuid": "568ad480-e05a-45d8-a2bf-61a86f6f9d0e",
+      "rawTextureUuid": "f36fefb7-7ab0-488b-b396-6459895b001b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 71,
+      "height": 69,
+      "rawWidth": 71,
+      "rawHeight": 69,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

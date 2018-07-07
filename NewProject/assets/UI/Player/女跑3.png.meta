@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "2335dd91-93e1-4b0f-bc9b-f5970f202258",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "女跑3": {
+      "ver": "1.0.3",
+      "uuid": "43bd5f6d-18f5-4162-ab3d-d17d970fd448",
+      "rawTextureUuid": "2335dd91-93e1-4b0f-bc9b-f5970f202258",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -7.5,
+      "offsetY": -85,
+      "trimX": 9,
+      "trimY": 170,
+      "width": 1176,
+      "height": 625,
+      "rawWidth": 1209,
+      "rawHeight": 795,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

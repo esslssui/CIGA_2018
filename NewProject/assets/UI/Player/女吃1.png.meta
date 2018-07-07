@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "00cc208b-d24b-43d1-9013-ac2044cce4f6",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "女吃1": {
+      "ver": "1.0.3",
+      "uuid": "0a77a2e2-e2a1-47bd-81fd-14267bd63775",
+      "rawTextureUuid": "00cc208b-d24b-43d1-9013-ac2044cce4f6",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -5.5,
+      "offsetY": 0,
+      "trimX": 7,
+      "trimY": 0,
+      "width": 1184,
+      "height": 660,
+      "rawWidth": 1209,
+      "rawHeight": 660,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

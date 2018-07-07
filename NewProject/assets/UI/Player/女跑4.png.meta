@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "df73c3b5-1cfe-4d94-b831-02c18a2687ac",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "女跑4": {
+      "ver": "1.0.3",
+      "uuid": "70ac4c85-e1c8-4efd-b149-355bbdf279a0",
+      "rawTextureUuid": "df73c3b5-1cfe-4d94-b831-02c18a2687ac",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -7.5,
+      "offsetY": -94.5,
+      "trimX": 9,
+      "trimY": 189,
+      "width": 1176,
+      "height": 606,
+      "rawWidth": 1209,
+      "rawHeight": 795,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "9afc8006-c26e-4ca2-8120-a4eaab88f5f5",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "男吃5": {
+      "ver": "1.0.3",
+      "uuid": "7726f33b-1209-42b7-a143-a176998ba503",
+      "rawTextureUuid": "9afc8006-c26e-4ca2-8120-a4eaab88f5f5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -12.5,
+      "offsetY": -17,
+      "trimX": 5,
+      "trimY": 34,
+      "width": 1174,
+      "height": 761,
+      "rawWidth": 1209,
+      "rawHeight": 795,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

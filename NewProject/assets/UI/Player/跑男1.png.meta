@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "b16d35ba-24df-4e6d-85ae-fe45824bd5b5",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "跑男1": {
+      "ver": "1.0.3",
+      "uuid": "5a2704bf-7c5c-48b8-a591-fe643640e009",
+      "rawTextureUuid": "b16d35ba-24df-4e6d-85ae-fe45824bd5b5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -2,
+      "offsetY": 0,
+      "trimX": 3,
+      "trimY": 0,
+      "width": 1199,
+      "height": 610,
+      "rawWidth": 1209,
+      "rawHeight": 610,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

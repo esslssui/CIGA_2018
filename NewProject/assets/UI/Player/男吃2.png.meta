@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "d384e921-773b-4cb4-b42b-4c96cadbdce1",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "男吃2": {
+      "ver": "1.0.3",
+      "uuid": "70da4d4d-027c-44b8-bbe9-b6150a8e4339",
+      "rawTextureUuid": "d384e921-773b-4cb4-b42b-4c96cadbdce1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 8.5,
+      "offsetY": -11.5,
+      "trimX": 44,
+      "trimY": 23,
+      "width": 1138,
+      "height": 729,
+      "rawWidth": 1209,
+      "rawHeight": 752,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
