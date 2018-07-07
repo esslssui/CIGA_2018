@@ -40,7 +40,7 @@ cc.Class({
     // update (dt) {},
 
     onStart(e){
-        wsat.net.send('login');
+        wsat.net.send('client_login');
         var ani = e.target.getComponent(cc.Animation);
         ani.on('finished',()=>{
             cc.director.loadScene('game');

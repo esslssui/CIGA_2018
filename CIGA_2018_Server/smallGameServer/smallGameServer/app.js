@@ -15,13 +15,31 @@ var gameClient = {
 var onlineControllers = {};
 // 离线玩家
 var offlineControllers = {};
-// 从控制器发给游戏
-function Controller2client(o) {
-    if (gameClient.conn)
+// 房间内玩家
+var onRoomControllers = {};
+
+/*
+*  从控制器发给游戏
+*  opt:协议名 data:发送的数据
+*/
+function Controller2client(opt, data) {
+    if (gameClient.conn) {
+        var o = {
+            opt: opt,
+            data: data
+        }
         gameClient.conn.sendText(JSON.stringify(o));
+    }
 }
-// 广播给所有控制器
-function broadcastController(o) {
+/*
+*  广播给所有控制器
+*  opt:协议名 data:发送的数据
+*/
+function broadcastController(opt, data) {
+    var o = {
+        opt: opt,
+        data: data
+    }
     var msg = JSON.stringify(o);
     for (var _k in onlineControllers) {
         if (onlineControllers[_k].conn)
@@ -54,6 +72,9 @@ var server = ws.createServer(function (conn) {
         }
         console.log('!-- context.opt');
         switch (context.opt) {
+            /*
+            *  测试用
+            */
             case 'hello':
                 baseStruct.opt = 'on_hello';
                 baseStruct.data.str = '你好啊!';
@@ -61,10 +82,76 @@ var server = ws.createServer(function (conn) {
                 var needSend = JSON.stringify(baseStruct);
                 this.sendText(needSend);
                 break;
+            /*
+            *  主程序登录
+            */
             case "client_login":
                 gameClient.conn = this;
+                //判断房间内是否已有玩家，同步玩家信息
+                if (Object.keys(onRoomControllers).length !== 0) {
+
+                }
                 break;
+            /*
+            *  玩家登录
+            *  给玩家分配一个唯一ID标识做属性名，重连和判断在线的时候用
+            */
             case "controller_login":
+                var data = context.data;//
+                if (!data) {  //玩家第一次连接,存入对象
+                    var key = Object.keys(onlineControllers).length.toString();
+                    onlineControllers[key].id = parseInt(key);
+                    onlineControllers[key].conn = this;
+                }
+                else {
+                    //判断是否在房间内，有的话是重连，需同步信息
+                    if (onRoomControllers.hasOwnProperty(data.id.toString())) {
+
+                    }
+                }
+                break;
+            /*
+            *  玩家坐下
+            */
+            case "sit":
+                var data = context.data;
+                //首先判断玩家是否已经在房间中，需同步信息
+                if (onRoomControllers.hasOwnProperty(data.id.toString())) {
+
+                }
+                else {
+                    //判断房间中玩家人数，满十人则不可再加入
+                    if (Object.keys(onRoomControllers).length === 10) {
+
+                    }
+                    else {
+                        var key = data.id.toString();
+                        //判断是否已经在在线列表中
+                        if (!onlineControllers.hasOwnProperty(key)) {
+                            onlineControllers[key].id = data.id;
+                            onlineControllers[key].conn = this;
+                        }
+                        //判断玩家是否已经在房间中
+                        if (!onRoomControllers.hasOwnProperty(key)) {
+                            onRoomControllers[key] = onlineControllers[key];
+                            //同一队玩家要有自己的标识(座位号)
+
+                        }
+                    }
+                }
+                break;
+            /*
+            *  玩家行为控制
+            *  1:上 2:下 3:左 4:右 5：
+            */
+            case "control":
+
+                break;
+            /*
+            *  玩家到达胜利点
+            *  同一队的两个玩家都到达胜利点才算获得胜利
+            */
+            case "victory":
                 break;
         }
     });
