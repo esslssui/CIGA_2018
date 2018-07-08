@@ -1,9 +1,9 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "walk",
+  "_name": "walk_2_1",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.05,
+  "_duration": 0.06666666666666667,
   "sample": 60,
   "speed": 0.2,
   "wrapMode": 2,
@@ -14,19 +14,25 @@
           {
             "frame": 0,
             "value": {
-              "__uuid__": "ced797a1-a3f6-4737-9ff1-893126c0b621"
+              "__uuid__": "3a1ed85b-1ec9-4235-b171-f301dee1b757"
             }
           },
           {
             "frame": 0.016666666666666666,
             "value": {
-              "__uuid__": "67fd2706-467c-4ac5-8f0e-50b213272a23"
+              "__uuid__": "c4a58ea1-696a-4d3b-bd62-c6358a321951"
             }
           },
           {
             "frame": 0.03333333333333333,
             "value": {
-              "__uuid__": "2228df03-46b5-47fd-8ce7-d91ae59da83d"
+              "__uuid__": "2b21f22f-f539-4c4f-9848-c78d9b906f2d"
+            }
+          },
+          {
+            "frame": 0.05,
+            "value": {
+              "__uuid__": "de318781-924b-426c-ba1e-2b98091e885b"
             }
           }
         ]

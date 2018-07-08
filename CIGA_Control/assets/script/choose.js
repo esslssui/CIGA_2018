@@ -44,9 +44,16 @@ cc.Class({
                 this.arrSeat[i].getComponent(cc.Button).interactable = data[i];
             }
         })
-        wsat.net.addListen('sit_successful', function (data) {
-            wsat.num = data.num;
-            cc.director.loadScene('control');
+
+        wsat.net.addListen('sit_result',function(data){
+            if(data && data.num){
+                wsat.num = data.num;
+                cc.director.loadScene('control');
+            }
+            else{
+                this.nodeLayout.active = false;
+                this.nodeTips.active = true;
+            }
         })
     },
 
@@ -59,11 +66,5 @@ cc.Class({
     },
     onChoose(e, d) {
         wsat.net.send('sit', d);
-        this.scheduleOnce(function () {
-            if (!wsat.num) {
-                this.nodeLayout.active = false;
-                this.nodeTips.active = true;
-            }
-        }, 1);
     }
 });

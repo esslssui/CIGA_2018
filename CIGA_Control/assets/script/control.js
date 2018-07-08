@@ -37,7 +37,9 @@ cc.Class({
 
     },
 
-    // update (dt) {},
+    update (dt) {
+        
+    },
 
     onBtn(e,d){
         wsat.net.send('control',d);

@@ -8,9 +8,30 @@
   },
   "collision-matrix": [
     [
+      false
+    ],
+    [
+      false,
+      false,
       true
     ],
     [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      true,
+      false
+    ],
+    [
+      false,
+      false,
+      true,
       false,
       false
     ]
@@ -22,7 +43,10 @@
   "fit-width": false,
   "group-list": [
     "default",
-    "wall"
+    "wall",
+    "player",
+    "point",
+    "victory"
   ],
   "simulator-orientation": false,
   "simulator-resolution": {

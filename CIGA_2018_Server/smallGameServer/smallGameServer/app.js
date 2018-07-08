@@ -87,10 +87,10 @@ var server = ws.createServer(function (conn) {
             */
             case "client_login":
                 gameClient.conn = this;
-                //判断房间内是否已有玩家，同步玩家信息
-                if (Object.keys(onRoomControllers).length !== 0) {
+                // //判断房间内是否已有玩家，同步玩家信息
+                // if (Object.keys(onRoomControllers).length !== 0) {
 
-                }
+                // }
                 break;
             /*
             *  玩家登录
@@ -100,15 +100,16 @@ var server = ws.createServer(function (conn) {
                 var data = context.data;//
                 if (!data) {  //玩家第一次连接,存入对象
                     var key = Object.keys(onlineControllers).length.toString();
+                    onlineControllers[key] = {}
                     onlineControllers[key].id = parseInt(key);
                     onlineControllers[key].conn = this;
                 }
-                else {
-                    //判断是否在房间内，有的话是重连，需同步信息
-                    if (onRoomControllers.hasOwnProperty(data.id.toString())) {
+                // else {
+                //     //判断是否在房间内，有的话是重连，需同步信息
+                //     if (onRoomControllers.hasOwnProperty(data.id.toString())) {
 
-                    }
-                }
+                //     }
+                // }
                 break;
             /*
             *  玩家坐下
