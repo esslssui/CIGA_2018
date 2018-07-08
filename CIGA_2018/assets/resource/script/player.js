@@ -266,6 +266,7 @@ cc.Class({
         ){
             return;
         }
+        wsat.audio.play(2, false, 1);
         var ani = this.getComponent(cc.Animation);
         if(ani){
             var clip = ani.play('walk_' + this.id);
@@ -300,6 +301,7 @@ cc.Class({
         ) {
             return;
         }
+        wsat.audio.play(2, false, 1);
         var ani = this.getComponent(cc.Animation);
         if (ani) {
             var clip = ani.play('walk_' + this.id);

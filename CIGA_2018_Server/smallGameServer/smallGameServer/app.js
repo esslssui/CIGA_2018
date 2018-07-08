@@ -218,6 +218,7 @@ ws.createServer(function (conn) {
         switch (context.opt) {
             case "client_login":
                 mainClient = this;
+                seats = {};
                 break;
             case "controller_login":
                 // onlineControllers.push(this);

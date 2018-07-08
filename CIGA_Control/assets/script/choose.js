@@ -51,7 +51,7 @@ cc.Class({
                     btn.interactable = true;
                 }                
             }
-        })
+        }.bind(this))
 
         wsat.net.addListen('sit_result',function(data){
             if(data && data.id){
@@ -62,7 +62,7 @@ cc.Class({
                 this.nodeLayout.active = false;
                 this.nodeTips.active = true;
             }
-        })
+        }.bind(this))
 
         this.schedule(function(){
             wsat.net.send('controller_login');

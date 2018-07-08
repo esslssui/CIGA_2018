@@ -256,6 +256,7 @@ cc.Class({
                     }
                     this.endNode.active = true;
                     this.endNode.setScale(0.5);
+                    wsat.audio.play(3, false, 1);
                     this.endNode.runAction(cc.sequence(cc.scaleTo(2,1.6),cc.callFunc(()=>{
                         cc.director.loadScene('start');
                     })))

@@ -1,0 +1,75 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "loop",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.83,
+  "sample": 60,
+  "speed": 0.2,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            -490,
+            138
+          ]
+        },
+        {
+          "frame": 0.16666666666666666,
+          "value": [
+            -384,
+            104
+          ]
+        },
+        {
+          "frame": 0.3333333333333333,
+          "value": [
+            -297,
+            43
+          ]
+        },
+        {
+          "frame": 0.5,
+          "value": [
+            -210,
+            -50
+          ]
+        },
+        {
+          "frame": 0.6666666666666666,
+          "value": [
+            -66,
+            -118
+          ]
+        },
+        {
+          "frame": 0.75,
+          "value": [
+            44.068650000060444,
+            -176.21408600003195
+          ]
+        },
+        {
+          "frame": 0.8333333333333334,
+          "value": [
+            159,
+            -237
+          ]
+        }
+      ],
+      "scaleX": [
+        {
+          "frame": 0,
+          "value": -0.5
+        }
+      ]
+    },
+    "comps": {
+      "cc.Sprite": {}
+    }
+  },
+  "events": []
+}

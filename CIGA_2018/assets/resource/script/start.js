@@ -34,12 +34,14 @@ cc.Class({
     // onLoad () {},
 
     start () {
+        wsat.audio.play(0, true, 1);
         wsat.net.start();
     },
 
     // update (dt) {},
 
     onStart(e){
+        wsat.audio.play(1, false, 1);
         wsat.net.send('client_login');
         var ani = e.target.getComponent(cc.Animation);
         ani.on('finished',()=>{

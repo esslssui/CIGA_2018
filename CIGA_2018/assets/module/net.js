@@ -3,7 +3,7 @@ var net = {};
 module.exports = net;
 
 //服务器地址
-const serverAddress = 'ws://localhost:8003'
+const serverAddress = 'ws://47.92.101.120:8003'
 
 //服务器连接超时时间
 const outTime = 1000;
