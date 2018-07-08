@@ -40,14 +40,22 @@ cc.Class({
     start() {
         this.arrSeat = this.nodeLayout.children;
         wsat.net.addListen('state', function (data) {
-            for (var i in data) {
-                this.arrSeat[i].getComponent(cc.Button).interactable = data[i];
+            for (var id in data) {
+                if(this.arrSeat[id - 1]){
+                     var btn = this.arrSeat[id - 1].getComponent(cc.Button);
+                }
+                if(data[id]){
+                    btn.interactable = false;
+                }
+                else{
+                    btn.interactable = true;
+                }                
             }
         })
 
         wsat.net.addListen('sit_result',function(data){
-            if(data && data.num){
-                wsat.num = data.num;
+            if(data && data.id){
+                wsat.id = data.id;
                 cc.director.loadScene('control');
             }
             else{
@@ -55,12 +63,15 @@ cc.Class({
                 this.nodeTips.active = true;
             }
         })
+
+        this.schedule(function(){
+            wsat.net.send('controller_login');
+        },1);
     },
 
     // update (dt) {},
 
     onStart() {
-        wsat.net.send('controller_login');
         this.nodeLayout.active = true;
         this.nodeStart.active = false;
     },

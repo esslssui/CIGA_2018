@@ -145,7 +145,7 @@ cc.Class({
         //     }
         // }.bind(this));
 
-        wsat.net.addListen('',function(data){
+        wsat.net.addListen('control_data',function(data){
             var id = data.id;
             var num = data.num;
             if(this.arrPlayer[id - 1]){

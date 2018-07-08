@@ -86,19 +86,19 @@ cc.Class({
         this._playerNode.y += Math.sin(this._angle * (Math.PI/180)) * this._speed;
         cc.log(this._angle);
         if(this._speed == 0){
-            wsat.net.send('control',666);
+            wsat.net.send('control', { id: wsat.id, num: 666 });
         }
         else if (this._angle > 45 && this._angle < 135){
-            wsat.net.send('control', 1);
+            wsat.net.send('control', {id:wsat.id,num:1});
         }
         else if (this._angle < -45 && this._angle > -135) {
-            wsat.net.send('control',2);
+            wsat.net.send('control',{id:wsat.id,num:2});
         }
         else if (this._angle < -135 || this._angle > 135) {
-            wsat.net.send('control', 3);
+            wsat.net.send('control', { id: wsat.id, num: 3 });
         }
         else if (this._angle < 45 && this._angle > -45) {
-            wsat.net.send('control', 4);
+            wsat.net.send('control', { id: wsat.id, num: 4 });
         }
     },
 

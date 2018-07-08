@@ -42,6 +42,6 @@ cc.Class({
     },
 
     onBtn(e,d){
-        wsat.net.send('control',d);
+        wsat.net.send('control',{id:wsat.id,num:d});
     }
 });

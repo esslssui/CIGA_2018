@@ -80,6 +80,8 @@ cc.Class({
         this.otherSideMirror = null;
         this.inTheOtherWorld = false;
         this.isLive = true;
+
+        this.node.setPosition(-10000,-10000);
     },
 
     reuse(param){
